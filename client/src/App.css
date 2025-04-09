@@ -1,0 +1,71 @@
+/* Reset and base styles */
+.App {
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Ensure all buttons remain visible */
+button {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Layout container for content */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+/* Specific protection for MUI buttons */
+.MuiButton-root {
+  display: inline-flex !important;
+  visibility: visible !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Protection for financial form buttons */
+.financial-form-button {
+  visibility: visible !important;
+  display: flex !important;
+  margin-top: 16px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+}
+
+/* Animation styles (keep if needed) */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* Scrollbar styles (optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
